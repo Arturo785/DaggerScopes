@@ -7,7 +7,8 @@ import com.plcoding.daggerscopes.SessionViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class VideoCallFragment: Fragment() {
+class VideoCallFragment : Fragment() {
 
+    // shares the viewModel with the ones that live in that graph
     private val viewModel: SessionViewModel by navGraphViewModels(R.navigation.nested_graph)
 }

@@ -4,6 +4,8 @@
     android:id="@+id/navigation_graph1"
     app:startDestination="@id/loginFragment">
 
+    <!--Updated one with the nested one-->
+
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.plcoding.daggerscopes.ui.LoginFragment"

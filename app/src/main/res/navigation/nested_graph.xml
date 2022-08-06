@@ -4,6 +4,9 @@
     android:id="@+id/navigation_graph1"
     app:startDestination="@id/videoCallFragment">
 
+    <!--The one in which we scope the viewModel-->
+    <!--When the user abandons this graph destroy the viewModel shared-->
+
     <fragment
         android:id="@+id/videoCallFragment"
         android:name="com.plcoding.daggerscopes.ui.VideoCallFragment"

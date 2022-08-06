@@ -13,6 +13,8 @@ import javax.inject.Singleton
 @InstallIn(ViewModelComponent::class)
 object AppModule {
 
+    // if you inject this dependency into a viewModel then it will attach to the viewModel lifeCycle
+    // if viewModel attach to fragment then as long as that fragment exists the viewModel will thus this also will live
     @Provides
     @ViewModelScoped
     fun provideSessionTimer(): SessionTimer {

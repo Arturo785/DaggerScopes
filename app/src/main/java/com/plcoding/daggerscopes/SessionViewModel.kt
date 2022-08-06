@@ -6,7 +6,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class SessionViewModel @Inject constructor(
-    private val sessionTimer: SessionTimer
+    private val sessionTimer: SessionTimer // scoped into viewModel scope
 ): ViewModel() {
 
 

@@ -4,6 +4,8 @@
     android:id="@+id/navigation_graph1"
     app:startDestination="@id/loginFragment">
 
+    <!--The original one that contains all the screens-->
+
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.plcoding.daggerscopes.ui.LoginFragment"

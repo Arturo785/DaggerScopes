@@ -6,6 +6,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Singleton
 
+// there is no need to be specific about which scope has it, it can be made in the scope that provides it
 class SessionTimer {
 
     private var isRunning = false
@@ -13,7 +14,7 @@ class SessionTimer {
 
     fun startTimer() {
         CoroutineScope(Dispatchers.Main).launch {
-            while(isRunning) {
+            while (isRunning) {
                 delay(1000L)
                 sessionTime++
             }
